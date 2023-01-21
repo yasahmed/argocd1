@@ -4,7 +4,6 @@ metadata:
   labels:
     app: bgd
   name: bgd
-  namespace: bgd
 spec:
   replicas: 1
   selector:
@@ -17,9 +16,9 @@ spec:
         app: bgd
     spec:
       containers:
-      - image: nginx
-        name: bgd
-        env:
-        - name: COLOR
-          value: "blue"
-        resources: {}
+        - image: nginx
+          name: bgd
+          env:
+            - name: COLOR
+              value: "blue"
+          resources: {}
