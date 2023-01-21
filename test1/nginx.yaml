@@ -9,7 +9,6 @@ spec:
   selector:
     matchLabels:
       app: bgd
-  strategy: {}
   template:
     metadata:
       labels:
@@ -21,4 +20,3 @@ spec:
           env:
             - name: COLOR
               value: "blue"
-          resources: {}
